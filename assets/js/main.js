@@ -6,7 +6,7 @@ const limit = 10;
 const maxRecords = 151;
 
 function convertPokemonToLi(pokemon){
-   return `<a class="linkBig" href="/bigPokemon.html?id=${pokemon.number}">
+   return `<a class="linkBig" href="./bigPokemon.html?id=${pokemon.number}">
    <li class="pokemon ${pokemon.type}">
    <span class="number">#00${pokemon.number}</span>
    <span class="name">${pokemon.name}</span>
