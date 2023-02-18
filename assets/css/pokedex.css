@@ -1,3 +1,14 @@
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title2 h4 {
+   font-size: 1rem;
+   color: brown;
+}
+
 .pokemons {
     display: grid;
     grid-template-columns: 1fr 1fr;
