@@ -2,23 +2,33 @@ body {
     display: flex;
     justify-content: center;
     height: 95vh;
+    background-image: url('https://cdn.custom-cursor.com/collections/129/cover-pokemon-preview.png');
+    
+}
+
+.containerGeral {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.842);
+    border-radius: 20px;
 }
 
 #card-big {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 68%;
+    height: 100%;
+    margin: auto;
 }
 
-.detalhe_pokemon_grande {
+#detalhe_pokemon_grande {
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 20px;
-    width: 40vw;
-    height: 600px;
-    max-height: 600px;
-    margin-top: 20px;
+    width: 65%;
+    height: 100%;
 }
 
 .big-img {
@@ -92,11 +102,13 @@ body {
 
 .footer {
     display: flex;
+    width: 93%;
+    height: 34%;
 }
 
 .abilities {
-    width: 200px;
-    height: 227px;
+    width: 50%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     letter-spacing: 3px;
@@ -115,16 +127,17 @@ body {
     color: #f8f6f1;
     text-shadow: black 0.4px 0.4px 0.4px;
     font-weight: 900;
-    margin-bottom: 40px;
+    margin-bottom: 1.5rem;
 }
 
 .ability1, .ability2 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 .moves-div {
-    width: 200px;
-    height: 227px;
+    width: 50%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     letter-spacing: 2px;
@@ -134,19 +147,20 @@ body {
     align-items: center;
     margin-left: 5px;
 
-    border-radius: 10px;
+    border-radius: 12px;
     box-shadow: -1px -1px 3px #000;
 }
 
 .moves-div h3 {
     color: #f8f6f1;
     text-shadow: black 0.4px 0.4px 0.4px;
-    font-weight: 900;
-    margin-bottom: 40px;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
 }
 
-.moves1, .moves2 {
-    margin-bottom: 20px;
+.moves1, .moves2, .moves3 {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 .normal {
@@ -222,15 +236,3 @@ body {
     background-color: #EE99AC;
 }
 
-@media screen and (min-width: 440px) {
-    .detalhe_pokemon_grande {
-        width: 100%;    
-    }
-}
-
-@media screen and (max-width: 439px) {
-    .detalhe_pokemon_grande {
-        width: auto;    
-    }
-
-}
