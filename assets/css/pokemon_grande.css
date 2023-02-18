@@ -32,24 +32,29 @@ body {
 }
 
 .big-img {
-    width: 250px;
-    height: 270px;
+    width: 31vw;
+    height: 37vh; 
     margin-top: 15px;
     margin-left: 30px;
-    margin-right: 30px;
+    margin-right: 20px;
 }
 
+#bigDetalhe {
+    width: 100%;
+    margin-top: 0.7rem;
+}
+
+
 .detalhe {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
+    justify-content: space-around;
 }
 
 .big-name {
     color: #fff;
     font-size: 3.2rem;
     font-weight: 500;
-    width: 250px;
     margin-left: 5px;
     text-transform: capitalize;
     margin-top: 10px;
@@ -64,15 +69,15 @@ body {
 }
 
 .img-Types {
-    width: 430px;
+    width: 100%;
     display: flex;
     align-items: center;
     list-style: none;
 }
 
 .typesBig {
-    width: 120px;
-    height: 180px;
+    width: 35%;
+    height: 67%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -101,9 +106,10 @@ body {
 }
 
 .footer {
+    margin-top: 10px;
     display: flex;
     width: 93%;
-    height: 34%;
+    height: 39%;
 }
 
 .abilities {
@@ -236,3 +242,36 @@ body {
     background-color: #EE99AC;
 }
 
+@media screen and (min-width: 612px) and (max-width: 992px) {
+    #card-big {
+        width: 80%;
+    }
+
+    #detalhe_pokemon_grande {
+        width: 85%;
+    }
+}
+
+@media screen and (min-width: 470px) and (max-width: 611px) {
+    #card-big {
+        width: 95%;
+        height: 95%;
+    }
+
+    #detalhe_pokemon_grande {
+        width: 95%;
+        height: 90%;
+    }
+}
+
+@media screen and (max-width: 469px) {
+    #card-big {
+        width: 100%;
+        height: 95%;
+    }
+
+    #detalhe_pokemon_grande {
+        width: 100%;
+        height: 90%;
+    }
+}
