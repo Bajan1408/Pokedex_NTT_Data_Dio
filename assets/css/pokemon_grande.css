@@ -275,3 +275,9 @@ body {
         height: 90%;
     }
 }
+
+@media screen and (max-width: 680px) {
+    .btnBig {
+        width: 14vw;
+    }
+}

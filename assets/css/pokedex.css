@@ -127,6 +127,23 @@
     }
 }
 
+@media screen and (max-width: 736px) {
+    
+    .title2 h4 {
+        font-size: 0.8rem;
+        color: brown;
+     }
+}
+
+@media screen and (max-width: 580px) {
+    
+    .title2 h4 {
+        font-size: 0.6rem;
+        color: brown;
+     }
+}
+
+
 .normal {
     background-color: #A8A878;;
 }
