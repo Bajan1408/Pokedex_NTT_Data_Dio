@@ -108,6 +108,16 @@
     }
  }
 
+@media screen and (min-width: 332px) {
+    .content {
+     min-width: 332px;
+     height: auto; 
+     margin: 1rem auto;
+     border-radius: 1rem;
+    }
+ }
+
+
  
 @media screen and (min-width: 380px) {
     .pokemons {

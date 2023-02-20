@@ -2,13 +2,23 @@ const pokemonList = document.getElementById('pokemonList');
 const loadMoreButton = document.getElementById('loadMoreButton');
 const loadLessButton = document.getElementById('loadLessButton');
 let offset = 0;
-const limit = 10;
+let limit = 10;
 const maxRecords = 151;
 
+
 function convertPokemonToLi(pokemon){
+  let zeroBeforeNumber;
+  if(pokemon.number < 10){
+    zeroBeforeNumber = '#00' + pokemon.number;
+  } else if(pokemon.number >= 10 && pokemon.number < 100){
+     zeroBeforeNumber = '#0' + pokemon.number;
+  } else {
+     zeroBeforeNumber = '#' + pokemon.number;
+  }
+
    return `<a class="linkBig" href="./bigPokemon.html?id=${pokemon.number}">
    <li class="pokemon ${pokemon.type}">
-   <span class="number">#00${pokemon.number}</span>
+   <span class="number">${zeroBeforeNumber}</span>
    <span class="name">${pokemon.name}</span>
    
    <div class="detail">
@@ -51,15 +61,20 @@ loadMoreButton.addEventListener('click', () => {
      }
   })
 
- loadLessButton.addEventListener('window.load', () => {
+ loadLessButton.addEventListener('click', () => {
     if((offset + limit) > 10){
-      console.log('Tem algum erro aqui??1');
+      //offset -= 10;
+      limit = -10;
+      console.log('Diminui 10 pokemons');
+      loadPokemonItems(offset, limit);
     //loadLessButton.parentNode.removeChild(loadLessButton);
-    document.getElementById('loadLessButton').remove();
-    console.log('Tem algum erro aqui??');
+    } else {
+    //document.getElementById('loadLessButton').remove();
+    loadLessButton.parentNode.removeChild(loadLessButton);
+    console.log('Removi o botão less');
    }
   })
 
-  console.log(offset + limit);
+  console.log('total = ', offset + limit);
   
  
