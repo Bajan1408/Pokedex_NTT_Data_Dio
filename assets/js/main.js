@@ -62,17 +62,17 @@ loadMoreButton.addEventListener('click', () => {
   })
 
  loadLessButton.addEventListener('click', () => {
-    if((offset + limit) > 10){
-      //offset -= 10;
-      limit = -10;
+    //if((offset + limit) > 10){
+      offset -= 10;
+      limit = 0;
       console.log('Diminui 10 pokemons');
       loadPokemonItems(offset, limit);
     //loadLessButton.parentNode.removeChild(loadLessButton);
-    } else {
+    //} else {
     //document.getElementById('loadLessButton').remove();
-    loadLessButton.parentNode.removeChild(loadLessButton);
-    console.log('Removi o botão less');
-   }
+    //loadLessButton.parentNode.removeChild(loadLessButton);
+    //console.log('Removi o botão less');
+   //}
   })
 
   console.log('total = ', offset + limit);

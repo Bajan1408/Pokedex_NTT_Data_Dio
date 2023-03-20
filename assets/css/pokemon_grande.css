@@ -242,6 +242,8 @@ body {
     background-color: #EE99AC;
 }
 
+/*
+
 @media screen and (min-width: 612px) and (max-width: 992px) {
     #card-big {
         width: 80%;
@@ -279,5 +281,59 @@ body {
 @media screen and (max-width: 680px) {
     .btnBig {
         width: 14vw;
+    }
+}
+*/
+
+@media screen and (min-width: 320px) and (max-width: 470px) {
+    .containerGeral {
+        width: 100%;
+        height: 100%;
+    }
+
+    #detalhe_pokemon_grande {
+        width: 149%;
+        height: 92%;
+    }
+
+    .detalhe {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: -10px;
+    }
+
+    .big-img {
+        width: 58vw;
+        height: 37vh;
+        margin-top: -3px;
+        margin-left: 14px;
+    }
+
+    .big-number {
+        font-size: 1.8rem;
+        align-self: flex-end;
+        margin-right: 8px;
+        margin-top: 3px;
+    }
+
+    .big-name {
+        font-size: 2.3rem;
+        margin-left: -90px;
+        margin-top: -21px;
+        letter-spacing: 1px;
+    }
+
+    .footer {
+        margin-top: 27px;
+    }
+
+    .moves-div h3 {
+        text-align: center;
+    }
+
+    .btnBig {
+        width: 16vw;
     }
 }

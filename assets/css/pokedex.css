@@ -108,17 +108,15 @@
     }
  }
 
-@media screen and (min-width: 332px) {
+@media screen and (min-width: 320px) {
     .content {
-     min-width: 332px;
+     min-width: 320px;
      height: auto; 
      margin: 1rem auto;
      border-radius: 1rem;
     }
  }
 
-
- 
 @media screen and (min-width: 380px) {
     .pokemons {
        grid-template-columns: 1fr 1fr;
