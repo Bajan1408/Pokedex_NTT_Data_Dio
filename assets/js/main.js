@@ -61,6 +61,7 @@ loadMoreButton.addEventListener('click', () => {
      }
   })
 
+ /*
  loadLessButton.addEventListener('click', () => {
     //if((offset + limit) > 10){
       offset -= 10;
@@ -73,8 +74,15 @@ loadMoreButton.addEventListener('click', () => {
     //loadLessButton.parentNode.removeChild(loadLessButton);
     //console.log('Removi o botão less');
    //}
-  })
+  })  */
 
   console.log('total = ', offset + limit);
   
+  loadLessButton.addEventListener("click", () => {
+     const liPokemons = document.querySelectorAll('.linkBig');
+        for(let i = liPokemons.length - 1; i > liPokemons.length - 11; i--) {
+            liPokemons[i].parentNode.removeChild(liPokemons[i]);
+         }
+     
+  });
  

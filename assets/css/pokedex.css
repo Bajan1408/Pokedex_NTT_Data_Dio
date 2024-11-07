@@ -97,6 +97,7 @@
     margin: .25rem 0;
     font-size: .625rem;
     margin: 10px;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 992px) {
